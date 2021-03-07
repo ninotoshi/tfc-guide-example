@@ -1,17 +1,11 @@
-variable "aws_access_key" {
-  type    = string
-}
-
-variable "aws_secret_key" {
-  type    = string
-}
-
 variable "aws_region" {
   type    = string
+  default = ""
 }
 
 variable "aws_role_arn" {
   type    = string
+  default = ""
 }
 
 variable "db_table_name" {

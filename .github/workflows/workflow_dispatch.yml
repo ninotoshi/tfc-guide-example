@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show full event
+        run: cat $GITHUB_EVENT_PATH
+      - name: show system env
+        run: printenv
